@@ -129,7 +129,7 @@ class BetaChess(Chess):
         discord.Message
             returns the game message
         """
-        self.embed_color = embed_color
+        self.embed_color = 0x01f5b6
 
         embed = await self.make_embed()
         self.view = ChessView(self, timeout=timeout)
