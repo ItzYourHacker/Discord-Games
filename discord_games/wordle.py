@@ -123,11 +123,11 @@ class Wordle:
         discord.Message
             returns the game message
         """
-        self.embed_color = embed_color
+        self.embed_color = 0x01f5b6
 
         buf = await self.render_image()
 
-        embed = discord.Embed(title="Wordle!", color=self.embed_color)
+        embed = discord.Embed(title="Wordle!", color=0x01f5b6)
         embed.set_image(url="attachment://wordle.png")
         embed.set_footer(text='Say "stop" to cancel the game!')
 
@@ -163,7 +163,7 @@ class Wordle:
 
                 await self.message.delete()
 
-                embed = discord.Embed(title="Wordle!", color=self.embed_color)
+                embed = discord.Embed(title="Wordle!", color=0x01f5b6)
                 embed.set_image(url="attachment://wordle.png")
 
                 self.message = await ctx.send(
