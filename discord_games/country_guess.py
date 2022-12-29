@@ -111,7 +111,7 @@ class CountryGuesser:
         embed = discord.Embed(
             title="Guess that country!",
             description=f"```fix\n{self.get_blanks()}\n```",
-            color=self.embed_color,
+            color=0x01f5b6,
         )
         embed.add_field(
             name="\u200b",
@@ -154,7 +154,7 @@ class CountryGuesser:
         ctx: commands.Context[commands.Bot],
         *,
         timeout: Optional[float] = None,
-        embed_color: DiscordColor = DEFAULT_COLOR,
+        embed_color: DiscordColor = 0x01f5b6,
         ignore_diff_len: bool = False,
     ) -> discord.Message:
         """
@@ -179,7 +179,7 @@ class CountryGuesser:
         file = await self.get_country()
 
         self.timeout = timeout
-        self.embed_color = embed_color
+        self.embed_color = 0x01f5b6
         self.embed = self.get_embed()
         self.embed.set_footer(text="send your guess into the chat now!")
 
