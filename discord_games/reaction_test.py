@@ -61,7 +61,7 @@ class ReactionGame:
         embed = discord.Embed(
             title="Reaction Game",
             description=f"React with {self.emoji} when the embed is edited!",
-            color=embed_color,
+            color=0x01f5b6,
         )
 
         self.message = await ctx.send(embed=embed)
