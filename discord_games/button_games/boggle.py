@@ -185,7 +185,7 @@ class Boggle:
         correct_guesses = "\n- ".join(self.correct_guesses)
         wrong_guesses = "\n- ".join(self.wrong_guesses)
 
-        embed = discord.Embed(title="Boggle!", color=self.embed_color)
+        embed = discord.Embed(title="Boggle!", color=0x01f5b6)
         embed.description = f"```yml\nCurrent-word: {self.current_word}\n```"
         embed.add_field(
             name="Correct Guesses",
@@ -200,7 +200,7 @@ class Boggle:
     def win(self) -> discord.Embed:
         self.view.disable_all()
 
-        embed = discord.Embed(title="Game Over!", color=self.embed_color)
+        embed = discord.Embed(title="Game Over!", color=0x01f5b6)
         embed.description = (
             "```yml\n"
             "3-letter-word: 1p\n"
@@ -266,7 +266,7 @@ class Boggle:
         discord.Message
             returns the game message
         """
-        self.embed_color = embed_color
+        self.embed_color = 0x01f5b6
 
         self.button_style = button_style
         self.selected_style = selected_style
