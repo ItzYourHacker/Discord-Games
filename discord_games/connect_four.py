@@ -55,7 +55,7 @@ class ConnectFour:
         return board
 
     def make_embed(self, *, status: bool) -> discord.Embed:
-        embed = discord.Embed(color=self.embed_color)
+        embed = discord.Embed(color=0x01f5b6)
         if not status:
             embed.description = f"**Turn:** {self.turn.name}\n**Piece:** `{self.player_to_emoji[self.turn]}`"
         else:
@@ -139,7 +139,7 @@ class ConnectFour:
         ctx: commands.Context[commands.Bot],
         *,
         timeout: Optional[float] = None,
-        embed_color: DiscordColor = DEFAULT_COLOR,
+        embed_color: DiscordColor = 0x01f5b6,
         remove_reaction_after: bool = False,
         **kwargs,
     ) -> discord.Message:
@@ -162,7 +162,7 @@ class ConnectFour:
         discord.Message
             returns the game message
         """
-        self.embed_color = embed_color
+        self.embed_color = 0x01f5b6
 
         embed = self.make_embed(status=False)
         self.message = await ctx.send(self.board_string(), embed=embed, **kwargs)
