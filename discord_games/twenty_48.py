@@ -213,7 +213,7 @@ class Twenty48:
         for num in (2048, 4096, 8192):
             if num in flattened:
                 if num == 2048:
-                    self.embed = discord.Embed(description="", color=self.embed_color)
+                    self.embed = discord.Embed(description="", color=0x01f5b6)
                 self.embed.description += f"⭐: Congrats! You hit **{num}**!\n"
 
                 if num == self.win_at:
@@ -358,7 +358,7 @@ class Twenty48:
             if lost:
                 self.embed = discord.Embed(
                     description="Game Over! You lost.",
-                    color=self.embed_color,
+                    color=0x01f5b6,
                 )
 
             if self._render_image:
