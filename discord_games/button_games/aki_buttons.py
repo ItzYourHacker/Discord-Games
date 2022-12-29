@@ -124,7 +124,7 @@ class BetaAkinator(Akinator):
         """
         self.back_button = back_button
         self.delete_button = delete_button
-        self.embed_color = embed_color
+        self.embed_color = 0x01f5b6
 
         self.player = ctx.author
         self.win_at = win_at
