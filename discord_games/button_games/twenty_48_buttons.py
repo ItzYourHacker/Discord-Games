@@ -110,7 +110,7 @@ class BetaTwenty48(Twenty48):
             returns the game message
         """
         self.win_at = win_at
-        self.embed_color = embed_color
+        self.embed_color = 0x01f5b6
 
         self.player = ctx.author
         self.view = BaseView(timeout=timeout)
