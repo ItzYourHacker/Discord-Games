@@ -78,7 +78,7 @@ class Tictactoe:
         return board
 
     def make_embed(self, *, game_over: bool = False) -> discord.Embed:
-        embed = discord.Embed(color=self.embed_color)
+        embed = discord.Embed(color=0x01f5b6)
         if game_over:
             status = f"{self.winner.mention} won!" if self.winner else "Tie"
             embed.description = f"**Game over**\n{status}"
@@ -120,7 +120,7 @@ class Tictactoe:
         ctx: commands.Context[commands.Bot],
         *,
         timeout: Optional[float] = None,
-        embed_color: DiscordColor = DEFAULT_COLOR,
+        embed_color: DiscordColor = 0x01f5b6,
         remove_reaction_after: bool = False,
         **kwargs,
     ) -> discord.Message:
