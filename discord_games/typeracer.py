@@ -123,7 +123,7 @@ class TypeRacer:
 
         desc = [self.format_line(i, x) for i, x in enumerate(winners, 1)]
         embed = discord.Embed(
-            title="Typerace results", color=self.embed_color, timestamp=dt.utcnow()
+            title="Typerace results", color=0x01f5b6, timestamp=dt.utcnow()
         )
         embed.add_field(name="Winners", value="\n".join(desc))
 
@@ -210,7 +210,7 @@ class TypeRacer:
         buffer = await self._tr_img(text, path_to_text_font)
 
         embed = discord.Embed(
-            title=embed_title, color=self.embed_color, timestamp=dt.utcnow()
+            title=embed_title, color=0x01f5b6, timestamp=dt.utcnow()
         )
         embed.set_image(url="attachment://tr.png")
 
