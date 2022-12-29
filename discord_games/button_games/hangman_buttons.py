@@ -112,7 +112,7 @@ class BetaHangman(Hangman):
             returns the game message
         """
         self.player = ctx.author
-        self.embed_color = embed_color
+        self.embed_color = 0x01f5b6
 
         embed = self.initialize_embed()
         self.view = HangmanView(self, timeout=timeout)
