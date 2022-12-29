@@ -153,7 +153,7 @@ class BetaCountryGuesser(CountryGuesser):
 
         file = await self.get_country()
 
-        self.embed_color = embed_color
+        self.embed_color = 0x01f5b6
         self.embed = self.get_embed()
         self.embed.add_field(
             name="Guess Log", value="```diff\n\u200b\n```", inline=False
