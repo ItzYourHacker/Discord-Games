@@ -97,7 +97,7 @@ class BetaConnectFour(ConnectFour):
         discord.Message
             returns the game message
         """
-        self.embed_color = embed_color
+        self.embed_color = 0x01f5b6
         self.button_style = button_style
 
         self.view = ConnectFourView(self, timeout=timeout)
