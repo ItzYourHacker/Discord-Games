@@ -122,7 +122,7 @@ class BetaWordle(Wordle):
         discord.Message
             returns the game message
         """
-        self.embed_color = embed_color
+        self.embed_color = 0x01f5b6
         self.player = ctx.author
 
         buf = await self.render_image()
