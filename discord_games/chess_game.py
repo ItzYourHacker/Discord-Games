@@ -29,7 +29,7 @@ class Chess:
         return "white" if self.turn == self.white else "black"
 
     async def make_embed(self) -> discord.Embed:
-        embed = discord.Embed(title="Chess Game", color=self.embed_color)
+        embed = discord.Embed(title="Chess Game", color=0x01f5b6)
         embed.description = f"**Turn:** `{self.turn}`\n**Color:** `{self.get_color()}`\n**Check:** `{self.board.is_check()}`"
         embed.set_image(url=f"{self.BASE_URL}{self.board.board_fen()}")
 
@@ -73,7 +73,7 @@ class Chess:
         ctx: commands.Context[commands.Bot],
         *,
         timeout: Optional[float] = None,
-        embed_color: DiscordColor = DEFAULT_COLOR,
+        embed_color: DiscordColor = 0x01f5b6,
         add_reaction_after_move: bool = False,
         **kwargs,
     ) -> discord.Message:
