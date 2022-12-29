@@ -111,7 +111,7 @@ class BetaReactionGame:
         self.embed = discord.Embed(
             title="Reaction Game",
             description=f"Click the button below, when the button changes color!",
-            color=embed_color,
+            color=0x01f5b6,
         )
         self.view = ReactionView(self, button_style=start_button_style, timeout=timeout)
         self.message = await ctx.send(embed=self.embed, view=self.view)
