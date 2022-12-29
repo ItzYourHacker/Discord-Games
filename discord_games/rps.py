@@ -65,7 +65,7 @@ class RockPaperScissors:
         embed = discord.Embed(
             title="Rock Paper Scissors",
             description="React to play!",
-            color=embed_color,
+            color=0x01f5b6,
         )
         self.message = await ctx.send(embed=embed)
 
