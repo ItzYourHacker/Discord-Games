@@ -157,7 +157,7 @@ class BetaRockPaperScissors(RockPaperScissors):
         self.embed = discord.Embed(
             title="Rock Paper Scissors",
             description="Select a button to play!",
-            color=embed_color,
+            color=0x01f5b6,
         )
 
         self.view = RPSView(self, button_style=button_style, timeout=timeout)
