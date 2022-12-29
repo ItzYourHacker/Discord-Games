@@ -159,9 +159,9 @@ class MemoryGame:
         discord.Message
             returns the game message
         """
-        self.embed_color = embed_color
+        self.embed_color = 0x01f5b6
         self.embed = discord.Embed(
-            description="**Memory Game**", color=self.embed_color
+            description="**Memory Game**", color=0x01f5b6
         )
         self.embed.add_field(name="\u200b", value="Moves: `0`")
 
