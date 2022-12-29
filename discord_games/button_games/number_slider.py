@@ -183,7 +183,7 @@ class NumberSlider:
 
         self.view = SlideView(self, timeout=timeout)
         self.embed = discord.Embed(
-            description="Slide the tiles back in ascending order!", color=embed_color
+            description="Slide the tiles back in ascending order!", color=0x01f5b6
         )
         self.embed.add_field(name="\u200b", value="Moves: `0`")
 
