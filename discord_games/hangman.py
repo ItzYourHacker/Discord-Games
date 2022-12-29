@@ -184,7 +184,7 @@ class Hangman:
 
     def initialize_embed(self) -> discord.Embed:
         self.embed.description = f"```\n{STAGES[self._counter]}\n```"
-        self.embed.color = self.embed_color
+        self.embed.color = 0x01f5b6
         self.embed.add_field(name="Word", value=f"{' '.join(self.correct)}")
 
         wrong_letters = ", ".join(self.wrong_letters) or BLANK
@@ -197,7 +197,7 @@ class Hangman:
         ctx: commands.Context[commands.Bot],
         *,
         timeout: Optional[float] = None,
-        embed_color: DiscordColor = DEFAULT_COLOR,
+        embed_color: DiscordColor =0x01f5b6,
         delete_after_guess: bool = False,
         **kwargs,
     ) -> discord.Message:
